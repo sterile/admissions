@@ -1,6 +1,6 @@
 ﻿namespace admissions
 {
-    partial class Form1
+    partial class AdmissionsCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -114,7 +114,7 @@
             this.rejectedCountLabel.Size = new System.Drawing.Size(35, 13);
             this.rejectedCountLabel.TabIndex = 8;
             // 
-            // Form1
+            // AdmissionsCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,7 +128,7 @@
             this.Controls.Add(this.gpaTxtBox);
             this.Controls.Add(this.testScoreLabel);
             this.Controls.Add(this.gpaLabel);
-            this.Name = "Form1";
+            this.Name = "AdmissionsCalculator";
             this.Text = "Lab 4";
             this.ResumeLayout(false);
             this.PerformLayout();
