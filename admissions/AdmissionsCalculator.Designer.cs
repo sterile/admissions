@@ -79,6 +79,7 @@
             this.calcAdmButton.TabIndex = 4;
             this.calcAdmButton.Text = "Calculate Admission";
             this.calcAdmButton.UseVisualStyleBackColor = true;
+            this.calcAdmButton.Click += new System.EventHandler(this.calcAdmButton_Click);
             // 
             // acceptedLabel
             // 
