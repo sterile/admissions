@@ -40,6 +40,7 @@ namespace admissions
             double gpa; // The student's GPA.
             int testScore; // The student's test score.
 
+            // Attempts to set variables
             gpaIsDouble = double.TryParse(gpaTxtBox.Text, out gpa);
             scoreIsInt = int.TryParse(testTxtBox.Text, out testScore);
 
@@ -49,27 +50,38 @@ namespace admissions
                 {
                     if (testScore >= MINIMUM_SCORE_WITH_GPA)
                     {
-                        // accepted
+                        // Student has met GPA and score requirements, admitted.
+                        accepted++;
+                        MessageBox.Show("This student has been accepted!", "Accepted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        // rejected
+                        // Student met GPA requirements but failed admissions test.
+                        rejected++;
+                        MessageBox.Show("This student has been rejected.", "Rejected", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else if (testScore >= MINIMUM_SCORE_LOW_GPA)
                 {
-                    // accepted
+                    // Student has failed GPA but met higher score requirements, admitted.
+                    accepted++;
+                    MessageBox.Show("This student has been accepted!", "Accepted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    // rejected
+                    // Student has failed both GPA and higher score requirements.
+                    rejected++;
+                    MessageBox.Show("This student has been rejected.", "Rejected", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                MessageBox.Show("Form Error", "Please check the validity of your data.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please check the validity of your data.", "Form Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            // Updates form counters
+            acceptedCountLabel.Text = accepted.ToString();
+            rejectedCountLabel.Text = rejected.ToString();
         }
     }
 }
