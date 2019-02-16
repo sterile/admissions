@@ -58,7 +58,7 @@ namespace admissions
                     {
                         // Student met GPA requirements but failed admissions test.
                         rejected++;
-                        MessageBox.Show("This student has been rejected.", "Rejected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("This student has been rejected.", "Rejected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else if (testScore >= MINIMUM_SCORE_LOW_GPA)
@@ -71,7 +71,7 @@ namespace admissions
                 {
                     // Student has failed both GPA and higher score requirements.
                     rejected++;
-                    MessageBox.Show("This student has been rejected.", "Rejected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("This student has been rejected.", "Rejected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
