@@ -42,40 +42,45 @@
             // gpaLabel
             // 
             this.gpaLabel.AutoSize = true;
-            this.gpaLabel.Location = new System.Drawing.Point(82, 76);
+            this.gpaLabel.Location = new System.Drawing.Point(164, 146);
+            this.gpaLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.gpaLabel.Name = "gpaLabel";
-            this.gpaLabel.Size = new System.Drawing.Size(29, 13);
+            this.gpaLabel.Size = new System.Drawing.Size(56, 25);
             this.gpaLabel.TabIndex = 0;
             this.gpaLabel.Text = "GPA";
             // 
             // testScoreLabel
             // 
             this.testScoreLabel.AutoSize = true;
-            this.testScoreLabel.Location = new System.Drawing.Point(52, 103);
+            this.testScoreLabel.Location = new System.Drawing.Point(104, 198);
+            this.testScoreLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.testScoreLabel.Name = "testScoreLabel";
-            this.testScoreLabel.Size = new System.Drawing.Size(59, 13);
+            this.testScoreLabel.Size = new System.Drawing.Size(116, 25);
             this.testScoreLabel.TabIndex = 1;
             this.testScoreLabel.Text = "Test Score";
             // 
             // gpaTxtBox
             // 
-            this.gpaTxtBox.Location = new System.Drawing.Point(123, 73);
+            this.gpaTxtBox.Location = new System.Drawing.Point(246, 140);
+            this.gpaTxtBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gpaTxtBox.Name = "gpaTxtBox";
-            this.gpaTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.gpaTxtBox.Size = new System.Drawing.Size(196, 31);
             this.gpaTxtBox.TabIndex = 2;
             // 
             // testTxtBox
             // 
-            this.testTxtBox.Location = new System.Drawing.Point(123, 100);
+            this.testTxtBox.Location = new System.Drawing.Point(246, 192);
+            this.testTxtBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.testTxtBox.Name = "testTxtBox";
-            this.testTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.testTxtBox.Size = new System.Drawing.Size(196, 31);
             this.testTxtBox.TabIndex = 3;
             // 
             // calcAdmButton
             // 
-            this.calcAdmButton.Location = new System.Drawing.Point(108, 126);
+            this.calcAdmButton.Location = new System.Drawing.Point(216, 242);
+            this.calcAdmButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.calcAdmButton.Name = "calcAdmButton";
-            this.calcAdmButton.Size = new System.Drawing.Size(115, 23);
+            this.calcAdmButton.Size = new System.Drawing.Size(230, 44);
             this.calcAdmButton.TabIndex = 4;
             this.calcAdmButton.Text = "Calculate Admission";
             this.calcAdmButton.UseVisualStyleBackColor = true;
@@ -84,42 +89,47 @@
             // acceptedLabel
             // 
             this.acceptedLabel.AutoSize = true;
-            this.acceptedLabel.Location = new System.Drawing.Point(197, 18);
+            this.acceptedLabel.Location = new System.Drawing.Point(394, 35);
+            this.acceptedLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.acceptedLabel.Name = "acceptedLabel";
-            this.acceptedLabel.Size = new System.Drawing.Size(53, 13);
+            this.acceptedLabel.Size = new System.Drawing.Size(102, 25);
             this.acceptedLabel.TabIndex = 5;
             this.acceptedLabel.Text = "Accepted";
             // 
             // rejectedLabel
             // 
             this.rejectedLabel.AutoSize = true;
-            this.rejectedLabel.Location = new System.Drawing.Point(197, 41);
+            this.rejectedLabel.Location = new System.Drawing.Point(394, 79);
+            this.rejectedLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.rejectedLabel.Name = "rejectedLabel";
-            this.rejectedLabel.Size = new System.Drawing.Size(50, 13);
+            this.rejectedLabel.Size = new System.Drawing.Size(97, 25);
             this.rejectedLabel.TabIndex = 6;
             this.rejectedLabel.Text = "Rejected";
             // 
             // acceptedCountLabel
             // 
             this.acceptedCountLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.acceptedCountLabel.Location = new System.Drawing.Point(256, 18);
+            this.acceptedCountLabel.Location = new System.Drawing.Point(512, 35);
+            this.acceptedCountLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.acceptedCountLabel.Name = "acceptedCountLabel";
-            this.acceptedCountLabel.Size = new System.Drawing.Size(35, 13);
+            this.acceptedCountLabel.Size = new System.Drawing.Size(68, 23);
             this.acceptedCountLabel.TabIndex = 7;
             // 
             // rejectedCountLabel
             // 
             this.rejectedCountLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rejectedCountLabel.Location = new System.Drawing.Point(256, 40);
+            this.rejectedCountLabel.Location = new System.Drawing.Point(512, 77);
+            this.rejectedCountLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.rejectedCountLabel.Name = "rejectedCountLabel";
-            this.rejectedCountLabel.Size = new System.Drawing.Size(35, 13);
+            this.rejectedCountLabel.Size = new System.Drawing.Size(68, 23);
             this.rejectedCountLabel.TabIndex = 8;
             // 
             // AdmissionsCalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.calcAdmButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 198);
+            this.ClientSize = new System.Drawing.Size(610, 381);
             this.Controls.Add(this.rejectedCountLabel);
             this.Controls.Add(this.acceptedCountLabel);
             this.Controls.Add(this.rejectedLabel);
@@ -129,6 +139,7 @@
             this.Controls.Add(this.gpaTxtBox);
             this.Controls.Add(this.testScoreLabel);
             this.Controls.Add(this.gpaLabel);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "AdmissionsCalculator";
             this.Text = "Lab 4";
             this.ResumeLayout(false);
